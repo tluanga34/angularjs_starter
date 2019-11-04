@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Channel Smart</title>
+  <link href="shared/assets/images/channel_smart_icon.webp" rel="shortcut icon">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <base href="/">
+
+  <style>
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak {
+      display: none !important;
+    }
+
+    .fade-ng-cloak {
+      display: block !important;
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+
+    .fade-ng-cloak.ng-cloak {
+      opacity: 0;
+    }
+  </style>
+
+  <!-- sourceFileMacro -->
+
+</head>
+<title>
+
+</title>
+
+<body ng-app="MainApp" ng-controller="MainCtrl" class="ng-cloak fade-ng-cloak"></body>
+  <div class="wrapper">
+    <main class="main-ui" ui-view ng-class="{'right-fixed' : !state.current.data.hideMenu}"></main>
+  </div>
+</body>
+
+</html>
